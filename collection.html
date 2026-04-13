@@ -1,0 +1,207 @@
+<!-- collection.html - Collection / Gallery Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stimela's Street Couture | Collection - Browse Our Drops</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- CONSISTENT NAVIGATION -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm fixed-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold text-uppercase" href="index.html">
+            <span class="brand-accent">STIMELA'S</span> STREET COUTURE
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMain">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+                <li class="nav-item"><a class="nav-link active" href="collection.html">COLLECTION</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+            </ul>
+            <div class="ms-lg-3 d-flex">
+                <i class="fas fa-search me-3 search-icon"></i>
+                <i class="fas fa-shopping-bag bag-icon"></i>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<main class="pt-4">
+    <div class="container py-5">
+        <div class="text-center mb-5">
+            <h1 class="fw-bold display-5">Our Collections</h1>
+            <p class="lead text-muted">Explore the latest drops from Stimela's Street Couture</p>
+        </div>
+
+        <!-- Filter Buttons (JavaScript powered) -->
+        <div class="text-center mb-5">
+            <button class="filter-btn active-filter" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="hoodies">Hoodies</button>
+            <button class="filter-btn" data-filter="bottoms">Bottoms</button>
+            <button class="filter-btn" data-filter="outerwear">Outerwear</button>
+        </div>
+
+        <!-- Collection Grid - IMAGE PLACEHOLDERS -->
+        <div class="row g-4" id="collectionGrid">
+            <!-- Hoodies -->
+            <div class="col-md-6 col-lg-4 collection-item" data-category="hoodies">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="collection-img-placeholder d-flex flex-column align-items-center justify-content-center">
+                        <i class="fas fa-tshirt fa-4x text-secondary mb-2"></i>
+                        <p class="small text-muted">[ IMAGE: Voyager Hoodie ]</p>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">"The Voyager" Hoodie</h5>
+                        <p class="card-text text-muted">Oversized fit, premium cotton, embroidered logo.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fw-bold">P650</span>
+                            <a href="#" class="btn btn-sm btn-outline-dark">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 collection-item" data-category="hoodies">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="collection-img-placeholder d-flex flex-column align-items-center justify-content-center">
+                        <i class="fas fa-tshirt fa-4x text-secondary mb-2"></i>
+                        <p class="small text-muted">[ IMAGE: Zip-Up Hoodie ]</p>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Utility Zip-Up</h5>
+                        <p class="card-text text-muted">Full-zip hoodie with kangaroo pockets and adjustable hood.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fw-bold">P580</span>
+                            <a href="#" class="btn btn-sm btn-outline-dark">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Bottoms -->
+            <div class="col-md-6 col-lg-4 collection-item" data-category="bottoms">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="collection-img-placeholder d-flex flex-column align-items-center justify-content-center">
+                        <i class="fas fa-shopping-cart fa-4x text-secondary mb-2"></i>
+                        <p class="small text-muted">[ IMAGE: Cargo Pants ]</p>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Tactical Cargos</h5>
+                        <p class="card-text text-muted">Relaxed fit cargos with 6 pockets and adjustable ankles.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fw-bold">P750</span>
+                            <a href="#" class="btn btn-sm btn-outline-dark">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 collection-item" data-category="bottoms">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="collection-img-placeholder d-flex flex-column align-items-center justify-content-center">
+                        <i class="fas fa-shopping-cart fa-4x text-secondary mb-2"></i>
+                        <p class="small text-muted">[ IMAGE: Sweatpants ]</p>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Essential Sweats</h5>
+                        <p class="card-text text-muted">French terry sweatpants with tapered leg and elastic cuffs.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fw-bold">P520</span>
+                            <a href="#" class="btn btn-sm btn-outline-dark">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Outerwear -->
+            <div class="col-md-6 col-lg-4 collection-item" data-category="outerwear">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="collection-img-placeholder d-flex flex-column align-items-center justify-content-center">
+                        <i class="fas fa-vest fa-4x text-secondary mb-2"></i>
+                        <p class="small text-muted">[ IMAGE: Denim Jacket ]</p>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Reconstructed Denim</h5>
+                        <p class="card-text text-muted">Upcycled denim jacket with custom patches and distressing.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fw-bold">P890</span>
+                            <a href="#" class="btn btn-sm btn-outline-dark">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 collection-item" data-category="outerwear">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="collection-img-placeholder d-flex flex-column align-items-center justify-content-center">
+                        <i class="fas fa-vest fa-4x text-secondary mb-2"></i>
+                        <p class="small text-muted">[ IMAGE: Bomber Jacket ]</p>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Satin Bomber</h5>
+                        <p class="card-text text-muted">Classic bomber silhouette with embroidered back design.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fw-bold">P980</span>
+                            <a href="#" class="btn btn-sm btn-outline-dark">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Image Instructions -->
+        <div class="alert alert-light mt-5 text-center border">
+            <i class="fas fa-info-circle me-2"></i>
+            <strong>Image Placeholders:</strong> Replace with your own images in the <code>images/</code> folder. 
+            Recommended: collection1.jpg, collection2.jpg, collection3.jpg, etc.
+        </div>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="bg-dark text-white pt-5 pb-4 mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <h5 class="text-uppercase fw-bold">STIMELA'S STREET COUTURE</h5>
+                <p>Urban luxury streetwear born in Botswana. Wear your story.</p>
+                <div class="social-icons">
+                    <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+            <div class="col-md-2 mb-4">
+                <h6>EXPLORE</h6>
+                <ul class="list-unstyled">
+                    <li><a href="index.html" class="text-white-50 text-decoration-none">Home</a></li>
+                    <li><a href="about.html" class="text-white-50 text-decoration-none">About</a></li>
+                    <li><a href="collection.html" class="text-white-50 text-decoration-none">Collection</a></li>
+                    <li><a href="contact.html" class="text-white-50 text-decoration-none">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 mb-4">
+                <h6>CONTACT</h6>
+                <p class="text-white-50">bida25-122@thuto.bac.ac.bw<br>+267 71 733 087<br>Gaborone, Botswana</p>
+            </div>
+            <div class="col-md-3 mb-4">
+                <h6>NEWSLETTER</h6>
+                <div class="input-group">
+                    <input type="email" class="form-control form-control-sm bg-secondary bg-opacity-25 border-0" placeholder="Email address">
+                    <button class="btn btn-outline-light btn-sm" type="button">→</button>
+                </div>
+            </div>
+        </div>
+        <hr class="opacity-25">
+        <div class="text-center text-white-50 small">© 2026 Stimela's Street Couture — All rights reserved.</div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

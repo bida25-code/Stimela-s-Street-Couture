@@ -1,0 +1,165 @@
+<!-- contact.html - Contact Page with HTML5 Form -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stimela's Street Couture | Contact - Get In Touch</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- CONSISTENT NAVIGATION -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm fixed-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold text-uppercase" href="index.html">
+            <span class="brand-accent">STIMELA'S</span> STREET COUTURE
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMain">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+                <li class="nav-item"><a class="nav-link" href="collection.html">COLLECTION</a></li>
+                <li class="nav-item"><a class="nav-link active" href="contact.html">CONTACT</a></li>
+            </ul>
+            <div class="ms-lg-3 d-flex">
+                <i class="fas fa-search me-3 search-icon"></i>
+                <i class="fas fa-shopping-bag bag-icon"></i>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<main class="pt-5">
+    <div class="container py-5">
+        <div class="text-center mb-5">
+            <h1 class="fw-bold display-5">Get In Touch</h1>
+            <p class="lead text-muted">We'd love to hear from you. Reach out for orders, collaborations, or just to say hi.</p>
+        </div>
+
+        <div class="row g-5">
+            <!-- Contact Form with HTML5 validation attributes -->
+            <div class="col-lg-7">
+                <div class="card border-0 shadow-sm p-4">
+                    <h3 class="fw-bold mb-4">Send Us a Message</h3>
+                    <form id="contactForm" novalidate>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name *</label>
+                            <input type="text" class="form-control" id="name" name="name" required minlength="2" placeholder="Enter your full name">
+                            <div class="invalid-feedback">Please enter your full name.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address *</label>
+                            <input type="email" class="form-control" id="email" name="email" required placeholder="name@example.com">
+                            <div class="invalid-feedback">Please enter a valid email address.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="+267 71 733 087">
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Subject *</label>
+                            <select class="form-select" id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="order">Order Inquiry</option>
+                                <option value="custom">Custom Design Request</option>
+                                <option value="collaboration">Collaboration</option>
+                                <option value="general">General Inquiry</option>
+                            </select>
+                            <div class="invalid-feedback">Please select a subject.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message *</label>
+                            <textarea class="form-control" id="message" name="message" rows="5" required minlength="10" placeholder="Tell us more about your request..."></textarea>
+                            <div class="invalid-feedback">Please enter your message (at least 10 characters).</div>
+                        </div>
+                        <button type="submit" class="btn btn-dark px-5 py-2">Send Message</button>
+                        <p class="small text-muted mt-3">* Required fields. We'll respond within 48 hours.</p>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Contact Information - UPDATED with new details -->
+            <div class="col-lg-5">
+                <div class="card border-0 shadow-sm p-4">
+                    <h3 class="fw-bold mb-4">Connect With Us</h3>
+                    <div class="contact-info-item mb-3">
+                        <i class="fas fa-store fa-2x"></i>
+                        <h5 class="mt-2">Studio Location</h5>
+                        <p class="text-muted">Plot 45, Main Mall<br>Gaborone, Botswana</p>
+                    </div>
+                    <div class="contact-info-item mb-3">
+                        <i class="fas fa-phone-alt fa-2x"></i>
+                        <h5 class="mt-2">Call / WhatsApp</h5>
+                        <p class="text-muted">+267 71 733 087<br>Mon-Fri: 9am - 6pm</p>
+                    </div>
+                    <div class="contact-info-item mb-3">
+                        <i class="fas fa-envelope fa-2x"></i>
+                        <h5 class="mt-2">Email</h5>
+                        <p class="text-muted">bida25-122@thuto.bac.ac.bw<br>orders@stimelasstreet.com</p>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fas fa-calendar-alt fa-2x"></i>
+                        <h5 class="mt-2">Custom Orders</h5>
+                        <p class="text-muted">Book a fitting session via email or phone.</p>
+                    </div>
+                </div>
+                <!-- Map Placeholder -->
+                <div class="card border-0 shadow-sm mt-4 p-3 text-center">
+                    <i class="fas fa-map fa-3x text-secondary mb-2"></i>
+                    <p class="small text-muted mb-0">[ MAP PLACEHOLDER: Google Maps integration ]</p>
+                    <p class="text-muted">📍 Visit our studio in Gaborone Main Mall</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Footer - UPDATED -->
+<footer class="bg-dark text-white pt-5 pb-4 mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <h5 class="text-uppercase fw-bold">STIMELA'S STREET COUTURE</h5>
+                <p>Urban luxury streetwear born in Botswana. Wear your story.</p>
+                <div class="social-icons">
+                    <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+            <div class="col-md-2 mb-4">
+                <h6>EXPLORE</h6>
+                <ul class="list-unstyled">
+                    <li><a href="index.html" class="text-white-50 text-decoration-none">Home</a></li>
+                    <li><a href="about.html" class="text-white-50 text-decoration-none">About</a></li>
+                    <li><a href="collection.html" class="text-white-50 text-decoration-none">Collection</a></li>
+                    <li><a href="contact.html" class="text-white-50 text-decoration-none">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 mb-4">
+                <h6>CONTACT</h6>
+                <p class="text-white-50">bida25-122@thuto.bac.ac.bw<br>+267 71 733 087<br>Gaborone, Botswana</p>
+            </div>
+            <div class="col-md-3 mb-4">
+                <h6>NEWSLETTER</h6>
+                <div class="input-group">
+                    <input type="email" class="form-control form-control-sm bg-secondary bg-opacity-25 border-0" placeholder="Email address">
+                    <button class="btn btn-outline-light btn-sm" type="button">→</button>
+                </div>
+            </div>
+        </div>
+        <hr class="opacity-25">
+        <div class="text-center text-white-50 small">© 2026 Stimela's Street Couture — All rights reserved.</div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
